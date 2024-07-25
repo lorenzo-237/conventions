@@ -5,8 +5,6 @@ import { auth } from "@/auth";
 import { AuthButton } from "@/components/auth/buttons/AuthButton";
 import { SignInButton } from "@/components/auth/buttons/SignInButton";
 import { UserDropdown } from "@/components/auth/buttons/UserDropdown";
-// import { ContactFeedbackPopover } from "@/components/contact/feedback/ContactFeedbackPopover";
-// import { ContactSupportDialog } from "@/components/contact/support/ContactSupportDialog";
 import {
   Layout,
   LayoutContent,
@@ -84,14 +82,6 @@ export const DashboardNavigation = async (props: PropsWithChildren) => {
               </nav>
               {/* Desktop header */}
               <nav className="flex items-center space-x-1 max-lg:hidden">
-                {/* <ContactFeedbackPopover>
-                  <Button variant="outline" size="sm">
-                    Feedback
-                  </Button>
-                </ContactFeedbackPopover> */}
-                <Button variant="outline" size="sm">
-                  Feedback
-                </Button>
                 <ThemeToggle />
               </nav>
             </div>
@@ -106,16 +96,11 @@ export const DashboardNavigation = async (props: PropsWithChildren) => {
             <Layout>
               <LayoutHeader>
                 <LayoutTitle>
-                  Sorry, you need to be authenticated to access this resource.
+                  Vous devez être connecté pour accéder à la ressource.
                 </LayoutTitle>
               </LayoutHeader>
               <LayoutContent className="flex gap-4">
                 <SignInButton />
-                {/* <ContactSupportDialog>
-                  <Button variant="secondary" size="sm">
-                    Contact support
-                  </Button>
-                </ContactSupportDialog> */}
                 <Button variant="secondary" size="sm">
                   Contact support
                 </Button>
